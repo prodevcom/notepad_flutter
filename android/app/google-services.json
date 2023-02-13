@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801618481044",
+    "project_id": "fiap-mba-flutter-notepad",
+    "storage_bucket": "fiap-mba-flutter-notepad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801618481044:android:2b288cba57b6a083ba4981",
+        "android_client_info": {
+          "package_name": "com.example.notepad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801618481044-9iahcff2p2rr7mt6ur0mgoj43pr65i0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDa2aOWEpbot_n5lL5OmC3M9oLJFJ5fno"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801618481044-9iahcff2p2rr7mt6ur0mgoj43pr65i0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
