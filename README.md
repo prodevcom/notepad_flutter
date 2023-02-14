@@ -13,7 +13,7 @@ Estamos utilizando:
 
 ## Testando o App
 
-É simples, basta você instar seu aplicativo e criar sua conta, assim terá acesso ao ambiente interno do APP, permitindo criar, editar e excluir suas notas, veja como:
+É simples, basta você instalar seu aplicativo e criar sua conta, assim terá acesso ao ambiente interno do APP, permitindo criar, editar e excluir suas notas, veja como:
 
 Quando o aplicativo abrir, você poderá fazer login diretamente na tela inicial, caso não tenha cadastro, logo abaixo terá uma opção: "CADASTRE-SE", clique e será redirecionado para efetuar o cadastro.
 
@@ -38,7 +38,9 @@ Quando o aplicativo abrir, você poderá fazer login diretamente na tela inicial
 
 ### Rodando o Aplicativo Localmente
 
-Para rodar o aplicativo, basta você baixa-lo em sua máquina e ter o ambiente do Flutter devidamente configurado, vale lembrar que deixamos nossas credenciais do Firebase disponíveis para que possa testar, pedimos conciência no uso
+Para rodar o aplicativo, basta você baixa-lo em sua máquina e ter o ambiente do Flutter devidamente configurado, vale lembrar que deixamos nossas credenciais do Firebase disponíveis para que possa testar, pedimos conciência no uso.
+
+Nosso aplicativo também esta preparado para temas claros e escuros.
 
 Agradecimentos,
 
