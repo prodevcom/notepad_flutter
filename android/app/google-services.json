@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:801618481044:android:2b288cba57b6a083ba4981",
         "android_client_info": {
-          "package_name": "com.example.notepad"
+          "package_name": "br.com.prodev.notepad"
         }
       },
       "oauth_client": [
