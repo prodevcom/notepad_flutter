@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 5)).then((_) {
+    Future.delayed(const Duration(milliseconds: 400)).then((_) {
       var user = FirebaseAuth.instance.currentUser;
       var route = (user != null) ? HomeScreen.id : LoginScreen.id;
       Navigator.pushReplacementNamed(context, route);

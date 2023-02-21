@@ -18,11 +18,12 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   late LoginController controller;
-  bool isLoading = false;
+  late bool isLoading;
 
   @override
   void initState() {
     controller = LoginController.of(context);
+    isLoading = false;
     super.initState();
   }
 
@@ -30,8 +31,9 @@ class _LoginScreenState extends State<LoginScreen> {
     setState(() => isLoading = true);
     if (FormsHelper.validate(controller.formKey)) {
       await controller.authenticate();
+    } else {
+      setState(() => isLoading = false);
     }
-    setState(() => isLoading = false);
   }
 
   @override

@@ -40,9 +40,9 @@ class _NotePadScreenState extends State<NotePadScreen> {
     model = (model == null)
         ? await controller.create()
         : await controller.update(model!);
-    setState(() => isLoading = false);
+    // setState(() => isLoading = false);
 
-    Future.delayed(const Duration(milliseconds: 500)).then(
+    Future.delayed(const Duration(seconds: 1)).then(
       (value) => onClose(),
     );
   }
@@ -63,25 +63,25 @@ class _NotePadScreenState extends State<NotePadScreen> {
             focusNode: controller.bodyFocusNode,
           ),
         ),
-        floatingActionButton: isLoading
-            ? const CircularProgressIndicator()
-            : Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  FloatingActionButton(
-                    onPressed: onSave,
-                    heroTag: null,
-                    child: const FaIcon(FontAwesomeIcons.solidFloppyDisk),
-                  ),
-                  const SizedBox(width: 12),
-                  FloatingActionButton.small(
-                    onPressed: onClose,
-                    heroTag: null,
-                    backgroundColor: Colors.red,
-                    child: const FaIcon(FontAwesomeIcons.xmark),
-                  ),
-                ],
-              ),
+        floatingActionButton: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            FloatingActionButton(
+              onPressed: isLoading ? null : onSave,
+              heroTag: null,
+              child: isLoading
+                  ? const CircularProgressIndicator(color: Colors.white)
+                  : const FaIcon(FontAwesomeIcons.solidFloppyDisk),
+            ),
+            const SizedBox(width: 12),
+            FloatingActionButton.small(
+              onPressed: onClose,
+              heroTag: null,
+              backgroundColor: Colors.red,
+              child: const FaIcon(FontAwesomeIcons.xmark),
+            ),
+          ],
+        ),
       ),
     );
   }
